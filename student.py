@@ -7,10 +7,13 @@ map_ = {
 }
 
 class Student(object): #inheritance
+
+    count = 0
     
     def __init__(self, fname, lname, cc='KE'):
         # generate sequential unique ID
-        self.__id = id # fake private
+        Student.count += 1
+        self.__id = Student.count # fake private
         self.fname = fname
         self.lname = lname
         self.country = map_[cc]
