@@ -13,6 +13,7 @@ Example:
 super_sum(10, 5, 6, 9) => 30
 super_sum([10, 5], 5) => 20
 super_sum([5, 6], [4, 5], 10) => 30
+super_sum([5, 6,5, 7.2], [4.0, 5], 10) => 37.7
 ```
 
 **Write at least 5 test cases for your function, before implementing:**
